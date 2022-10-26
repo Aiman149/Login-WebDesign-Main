@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascriptExercise</title>
+    <script defer src="log.js"></script>
+</head>
+
+<body>
+    <form method="post" class="form1">
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Mesti mempunyai sekurangnya satu simbol, nombor, huruf besar, huruf kecil dan lebih dari 12 karakter."
+                required>
+            <button type="submit" value="Login" onClick="login()">Log in</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember">Remember me
+            </label><br><br>
+            <span class="psd"><a href="#">Forgot password?</a></span><br><br>
+        </div>
+    </form>
+</body>
+
+</html>
